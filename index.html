@@ -9,10 +9,20 @@
 </head>
 <body>
     <header>
+        <div id="mobile-menu">
+            <button id="mobile-menu-close">X</button>
+                <ul>
+                    <li><a href="#work-section" onclick="closeMenu()">Portfolio</a></li>
+                    <li><a href="#about-section" onclick="closeMenu()">About</a></li>
+                    <li><a href="#contact-section" onclick="closeMenu()">Contact</a></li>
+                </ul>
+        </div>
         <nav class="logo">
-            <img src="images/Union.png" alt="">
+            <button id="logo">
+                <img id="toggle-icon" src="images/Union.png" alt="logo">
+            </button>
         </nav>
-        <nav class="menu">
+        <nav class="menu" id="menu">
             <ul>
                 <li>Portfolio</li>
                 <li>About</li>
@@ -22,7 +32,7 @@
         
     </header>
 
-    <main>
+    <main >
         <section class="home" id="home-section">
             <h1>Hey there. <br> I’m Alex. <br>
                 <span class="success">I’m a software developer</span>
@@ -148,7 +158,7 @@
             </div>
         </section>
 
-        <section class="about" id="section-about">
+        <section class="about" id="about-section">
             <div class="about-content">
                 <h2>About me</h2>
                 <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
@@ -196,8 +206,9 @@
             
         </section>
 
-        <section class="contact-me" id="contact-me">
+        <section class="contact-me" id="contact-section">
             <div class="contact-content">
+
                 <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
                 <form action="https://formspree.io/f/xjvdnrde" method="post" target="_blank">
                     <ul>
@@ -237,5 +248,7 @@
                     </ul>
         </section>
     </main>
+
+    <script src="index.js"></script>
 </body>
 </html>
